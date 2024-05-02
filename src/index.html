@@ -9,13 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 </head>
-<body class="font-dmsans">
-    <main>
-        <header>
-            <img class="w-10 h-10" src="./images/star.svg" alt="">
-            <p>Mariusz Stanisław</p>
-            <p>Frontend developer</p>
-            <nav>
+
+<body class="font-dmsans bg-bg text-white">
+    <main class="px-4">
+        <header class="max-w-wtf mx-auto py-6">
+            <div class="flex gap-4">
+                <img class="w-10 h-10" src="./images/star.svg" alt="">
+                <div>
+                    <p class="text-xl font-bold text-accent">Mariusz Stanisław</p>
+                    <p class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend developer</p>
+                </div>
+            </div>
+            <nav class="hidden">
                 <ul>
                     <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
@@ -26,14 +31,17 @@
             </nav>
         </header>
 
-       <section id="about">
-            <h1>My name is Mariusz and I'm an aspiring Frontend developer.</h1>
-            <p>You might be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. I'm looking for a new challenges so if you have one contact me</p>
-            <a href="#contact">Get in touch</a>
-            <a href="#skills">Get to know me</a>
+       <section class="mx-auto max-w-wtf mb-20" id="about">
+            <img class="w-full mb-5" src="images/Maciek.png" alt="Maciek">
+            <h1 class="text-2xl font-bold mb-4">My name is Mariusz and I'm an aspiring <span class="text-accent">Frontend developer.</span></h1>
+            <p class="text-gray-400 mb-8">You might be interested in checking the list of my <a href="#skills" class="text-white">skills.</a> Don't forget to have a glimpse at my <a href="#projects" class="text-white">projects.</a> I'm looking for a new challenges so if you have one <a href="#contact" class="text-white">contact</a> me.</p>
+            <div class="flex flex-col items-start gap-4">
+                <a class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem]" href="#contact"><img src="images/chat.svg" alt=""> Get in touch</a>
+                <a class="bg-bg text-accent flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] border-lightGray border-2" href="#skills"><img src="images/user.svg" alt=""> Get to know me</a>         
+            </div>
        </section>
 
-       <section id="skills">
+       <section class="max-w-wtf mx-auto" id="skills">
             <h2>MY SKILLS</h2>
             <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do below!</p>
             <article>
@@ -41,14 +49,14 @@
                 <h3>Working knowledge</h3>
                 <ul>
                     <li>— Semantic HTML5</li>
-                       <li>— Flexbox</li>
-                       <li>— Markdown</li>
-                       <li>— JS: Local storage</li>
-                       <li>— Figma</li>
-                       <li>— CSS grid</li>
-                       <li>— Forms</li>
-                       <li>— JS: DOM manipulations</li>
-                       <li>— SASS</li>
+                    <li>— Flexbox</li>
+                    <li>— Markdown</li>
+                    <li>— JS: Local storage</li>
+                    <li>— Figma</li>
+                    <li>— CSS grid</li>
+                    <li>— Forms</li>
+                    <li>— JS: DOM manipulations</li>
+                    <li>— SASS</li>
                 </ul>
             </article>
                 
@@ -81,7 +89,7 @@
             </article>
        </section>
 
-       <section id="projects">
+       <section class="max-w-wtf mx-auto" id="projects">
             <h2>Recent Projects</h2>
             <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
             <article>
@@ -97,32 +105,32 @@
             </article>
        </section>
 
-       <section>
-        <h2>After hours</h2>
-        <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
-        <article>
-            <img src="images/music.png" alt="">
-            <h3>Electronic Music</h3>
-            <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
-        </article>
-        <article>
-            <img src="images/star-wars.png" alt="">
-            <h3>Star Wars Universum</h3>
-            <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
-        </article>
-        <article>
-            <img src="images/games.png" alt="">
-            <h3>Video Games</h3>
-            <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
-        </article>      
-        <article>
-            <img src="images/gym.png" alt="">
-            <h3>Strength Training</h3>
-            <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
-        </article> 
+       <section class="max-w-wtf mx-auto">
+            <h2>After hours</h2>
+            <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+            <article>
+                <img src="images/music.png" alt="">
+                <h3>Electronic Music</h3>
+                p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+            </article>
+            <article>
+                <img src="images/star-wars.png" alt="">
+                <h3>Star Wars Universum</h3>
+                <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
+            </article>
+            <article>
+                <img src="images/games.png" alt="">
+                <h3>Video Games</h3>
+                <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
+            </article>      
+            <article>
+                <img src="images/gym.png" alt="">
+                <h3>Strength Training</h3>
+                <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
+                </article> 
        </section>
 
-       <section id="contact">
+       <section class="max-w-wtf mx-auto" id="contact">
             <h2>Let's work together</h2>
             <p>I'm open for new opportunities.<br>If you have one for me we should talk!</p>
             <a href="mailto:mariusz@coten.pl ">mariusz@coten.pl</a>
