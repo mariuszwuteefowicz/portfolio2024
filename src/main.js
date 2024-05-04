@@ -13,7 +13,7 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
         const {description, name,stargazers_count, html_url, topics, homepage} = repository;
 
         let tags = ``;
-        for (tag of topics) {
+        for (let tag of topics) {
             tags += `<li class="bg-gray-400/10 py-1 px-2 rounded text-sm font-bold">${tag}</li>`
         }
 
