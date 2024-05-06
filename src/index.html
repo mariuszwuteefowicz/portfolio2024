@@ -32,7 +32,13 @@
         </header>
 
        <section class="mx-auto max-w-wtf mb-20 md:pt-32 md:flex md:justify-between items-center md:gap-12" id="about">
-            <img class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5 md:order-2" src="images/Maciek.png" alt="Maciek">
+
+        <picture class="md:order-2">
+            <source srcset="images/Maciek.png?as=webp&width=416" type="image/webp">
+            <source srcset="images/Maciek.png?as=avif&width=416" type="image/avif">
+            <img class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5" src="images/Maciek.png" alt="Maciek"/>            
+        </picture>          
+
             <div class=" max-w-3xl">
                 <h1 class="text-2xl md:text-3xl lg:text-5xl md:leading-snug lg:leading-snug font-bold mb-4">My name is Mariusz and I'm an&nbsp;aspiring <span class="text-accent">Frontend developer.</span></h1>
                 <p class="text-gray-400 md:mb-16 mb-8 md:text-2xl font-medium">You might be interested in checking the list of my <a href="#skills" class="text-white">skills.</a> Don't forget to have a glimpse at my <a href="#projects" class="text-white">projects.</a> I'm looking for a new challenges so if you have one <a href="#contact" class="text-white">contact</a> me.</p>
@@ -105,22 +111,48 @@
             <p class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
             <div class="grid gap-16 md:gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <article>
-                    <img src="images/music.png" class="w-full mb-6" alt="">
+
+                    <picture>
+                        <source media="(max-width:1023px)" srcset="images/music.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(max-width:1023px)" srcset="images/music.png?as=avif&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="images/music.png?as=webp&width=316" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="images/music.png?as=avif&width=316" type="image/avif">
+                        <img class="w-full mb-6 rounded-wtf-xl" src="images/music.png" alt=""/>            
+                    </picture>
+
                     <h3 class="text-2xl font-bold tracking-tight mb-1">Electronic Music</h3>
                     <p class="text-gray-400">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
                 </article>
                 <article>
-                    <img src="images/star-wars.png" class="w-full mb-6" alt="">
+                    <picture>
+                        <source media="(max-width:1023px)" srcset="images/star-wars.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(max-width:1023px)" srcset="images/star-wars.png?as=avif&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="images/star-wars.png?as=webp&width=316" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="images/star-wars.png?as=avif&width=316" type="image/avif">
+                        <img class="w-full mb-6 rounded-wtf-xl" src="images/star-wars.png" alt=""/>            
+                    </picture>
                     <h3 class="text-2xl font-bold tracking-tight mb-1">Star Wars Universum</h3>
                     <p class="text-gray-400">In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
                 </article>
                 <article>
-                    <img src="images/games.png" class="w-full mb-6" alt="">
+                    <picture>
+                        <source media="(max-width:1023px)" srcset="images/games.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(max-width:1023px)" srcset="images/games.png?as=avif&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="images/games.png?as=webp&width=316" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="images/games.png?as=avif&width=316" type="image/avif">
+                        <img class="w-full mb-6 rounded-wtf-xl" src="images/games.png" alt=""/>            
+                    </picture>
                     <h3 class="text-2xl font-bold tracking-tight mb-1">Video Games</h3>
                     <p class="text-gray-400">Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
                 </article>      
                 <article>
-                    <img src="images/gym.png" class="w-full mb-6" alt="">
+                    <picture>
+                        <source media="(max-width:1023px)" srcset="images/gym.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(max-width:1023px)" srcset="images/gym.png?as=avif&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="images/gym.png?as=webp&width=316" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="images/gym.png?as=avif&width=316" type="image/avif">
+                        <img class="w-full mb-6 rounded-wtf-xl" src="images/gym.png" alt=""/>            
+                    </picture>
                     <h3 class="text-2xl font-bold tracking-tight mb-1">Strength Training</h3>
                     <p class="text-gray-400">Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
                 </article> 
