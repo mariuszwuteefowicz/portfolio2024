@@ -35,8 +35,8 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
                 </ul>
             </div>
             <div class="flex flex-col flex-wrap md:flex-row gap-4 items-start">
-                <a href="${homepage}" target="blank" rel="noreferrer nofollow" class="bg-bg text-accent flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500"><img src="${demoIcon}" class="w-6 h-6" alt=""> View demo</a>
-                <a href="${html_url}" target="blank" rel="noreferrer nofollow" class="bg-bg text-accent flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500"><img src="${githubIcon}" class="w-6 h-6" alt="">Source code</a>
+                <a href="${homepage}" target="blank" rel="noreferrer nofollow" class="bg-bg text-accent flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500"><img src="${demoIcon}" class="w-6 h-6 width="24" height="24" alt=""> View demo</a>
+                <a href="${html_url}" target="blank" rel="noreferrer nofollow" class="bg-bg text-accent flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500"><img src="${githubIcon}" class="w-6 h-6" width="24" height="24" alt="">Source code</a>
             </div>
         </div>
         </article>`
