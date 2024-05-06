@@ -5,9 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        slowSpin: 'spin 15s infinite linear'
+      },
       colors: {
         bg: '#020916',
-        accent: '#CEFF7E',
+        accent: {DEFAULT: '#CEFF7E', 400: '#c2fc5e'},
         lightGray: '#1F2937'
       },
       fontFamily: {
